@@ -4,7 +4,9 @@
   "description": "A webpack plugin for web-ext",
   "main": "web-ext-webpack-plugin.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "web",
@@ -24,6 +26,8 @@
   },
   "homepage": "https://github.com/hiikezoe/web-ext-webpack-plugin#readme",
   "dependencies": {
-    "web-ext": "2.7.0"
-  }
+    "web-ext": "2.7.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
